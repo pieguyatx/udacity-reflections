@@ -13,3 +13,7 @@ How can you use the staging area to make sure you have one commit per logical ch
 What are some situations when branches would be helpful in keeping your history organized?  How would branches help?
 
   Different branches would be useful when testing experimental features, making new versions of a project, or customizing a project for a particular purpose.  The branches help you organize the evolution of a project into other forms that have different purposes.
+
+How do the diagrams help you visualize the branch structure?
+
+  They show how the master repository is related to any branches, by showing what commits they share in common.

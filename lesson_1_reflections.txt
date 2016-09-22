@@ -1,0 +1,27 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+  (I actually used FC in a Windows command prompt)  It quickly narrowed down the lines that changed, and hence narrowed down possible lines that could have had the bug.  I didn't have to scan every single line.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+  If I make some coding errors, I can revert back to working old versions more quickly, if needed.  I can also see larger patterns in how I work; I could see if certain features or coding problems take longer to develop or solve.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having version automatically saved, like Google Docs does?
+
+  Pros: freedom and control of saving whenever you want, ensures you save at important points, avoids saving code that is incomplete, saves an efficient number of files.  Cons: user may forget to save, user may accidentally save over files unintentionally, inconsistent time stamps.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+  Some systems are designed for projects in which lots of files go together, such as code or webpages in Git.  Other systems, like Google Docs, are designed for standalone files, and so they don't have to store whole groups of files together when usually just one file has changed.
+
+How can you use the commands git log and git diff to view the history of files?
+
+  Obtain a git repository of files.  Go the folder while within either git bash or git shell, and then run the command "git log".  That will show the history of commits for the project.  This also shows commit IDs.  When you find the IDs of the commits that you want to compare, enter "git diff ID1 ID2" to compare.
+
+How might using version control make you more confident to make changes that could break something?
+
+  Version control can act as a regular backup of your files.  It's more powerful than just saving copies of files, because the backups in version control also come with notes from the author(s) explaining what they intended to change at each new version.  Also git specifically has a quick method of switching between different versions of the files, using "git checkout" and the appropriate commit ID from the git log.  This avoids having to poke through lots of archived folders of files of code.  Essentially version control should let you have a working version, even if you break something.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+  I want to use Git to help me manage the development of several small coding projects.  First, I want to manage the development of some small word games, starting with a "word path" game based on text in the internet, followed by a "one-word-at-a-time" collaborative game.  Those are just from me, alone.  I also want to collaborate with other developers to create another word game for mass entertainment purposes.  Lastly I want to use git possibly to manage my Javascript development for my personal website.  Related to that, I might want to archive my old MATLAB code from school on github, which may also be referenced from that same website.  My use of git beyond this will evolve as time goes on.

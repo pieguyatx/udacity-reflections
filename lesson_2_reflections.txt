@@ -1,0 +1,3 @@
+What happens when you initialize a repository?  Why do you need to do it?
+
+  Initializing a repo (with git init) creates a .git hidden folder in the directory that will store all the repo history.  You need to create this before git knows to treat the directory as a repository.

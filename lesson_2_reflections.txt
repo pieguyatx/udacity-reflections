@@ -21,3 +21,7 @@ How do the diagrams help you visualize the branch structure?
 What is the result of merging two branches together?  Why do we represent it in the diagram the way we do?
 
   Merged branches are supposed to include all the additions and deletions of two different branches, hopefully with all functions and features still intact.  The tree diagram is a good representation, because it shows where a project diverged in purpose, and possibly where they grew together again.
+
+What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+
+  Pros: Save some time, potentially.  Less chance of typos or copy-paste errors.  Allow multiple people working on multiple branches to merge their code faster.  Cons: Can take more time if lots of conflicts occur, when multiple people are working on the same part of the code.  

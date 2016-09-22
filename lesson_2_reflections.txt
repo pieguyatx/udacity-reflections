@@ -5,3 +5,7 @@ What happens when you initialize a repository?  Why do you need to do it?
 How is the staging area different from the working directory and the repository?  What value do you think it offers?
 
   The staging area tells you which specific files in the working directory you want to add to the repository, or which files whose changes you want to track.  Its value is that, sometimes you make changes to files, but you might only want to save changes to a particular set of files instead of all of them.  It helps you record more specific changes in a commit.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+  Add only the relevant files to the staging area when you are done making a logical change in the directory.  Commit the change for just those files.  Use the commands "git diff" and "git diff --staged" to compare the working directory to the staging area, and the staging area to the latest commit in the repository, respectively.

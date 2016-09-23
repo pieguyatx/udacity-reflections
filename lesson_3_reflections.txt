@@ -1,0 +1,3 @@
+When would you want to use a remote repository rather than keeping all your work local?
+
+  This is useful when you are working on a project from multiple computers, or when multiple people are working on the same project.  It also could be useful if you just want a backup for your projects online, or if you want to publicize or open-source a project.

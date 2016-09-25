@@ -6,6 +6,7 @@ git diff IDold IDnew
 	git diff --staged	//compares staged to repo recent commit
 git checkout ID
 git status
+git init   (initializes/creates new git repo locally)
 git add
 	git add -A (stages All)
 	git add . (stages new and modified, without deleted)

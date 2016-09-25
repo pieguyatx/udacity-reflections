@@ -17,3 +17,7 @@ What is the benefit of having a copy of the last known state of the remote store
 How would you collaborate without using Git or GitHub?  What would be easier, and what would be harder?
 
   Without git or GitHub, I would share files using either email, Google Docs, Dropbox, or some other similar service.  I would have to specify which documents we're talking about all the time, and which version, and so multiple copies of the same file might be needed. This is a little easier with git/GitHub only because it hides these updates and only shows the version that you've got checked out.  Using git/GitHub is a little less intuitive off the bat, and you all have to learn the proper methods and terminology for using the tools.  The worflow of testing a new feature by committing to a new branch, pushing the branch, making a pull request, analyzing the pull request responses, and re-coding, all can be confusing.
+
+When would you want to make changes in a separate branch rather than directly in master?  What benefits does each approach have?
+
+  Given the longer workflow when collaborating on branches, I think you would want to work on separate branches when the feature you're working on is more complicated or less tested.  This would give all the collaborators more of a chance to review the branch before incorporating it into the master branch.  The benefit to all this is a little be more insurance that the master isn't overwritten.  Also people can mess around on their own ideas without putting in a lot of confusing commits into the master branch.

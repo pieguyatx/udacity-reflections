@@ -1,0 +1,72 @@
+git log --stat
+	git log -n1  (show 1 record of commits)
+git clone URL
+git diff IDold IDnew
+	git diff    // only compares working directory to staging area
+	git diff --staged	//compares staged to repo recent commit
+git checkout ID
+git status
+git add
+	git add -A (stages All)
+	git add . (stages new and modified, without deleted)
+	git add -u (stages modified and deleted, without new)
+git reset --HARD // very veeeerrrry careful with this; clears all changes in working directory and staging area
+	git reset HEAD -- path/to/file  (remove individual file from staging)
+	git reset HEAD --   (remove all files from staging)
+git config --global user.name "John Doe"
+	git config --global user.email "john@doe.org"
+	 git config --global core.autocrlf true  (auto-resolve Mac/Win issues)
+git log --graph --oneline [branch1] [branch2]
+git branch [branchname]
+	git branch -b [branchname] -- creates and checks out 
+		so that a separate checkout command isn't necessary
+git merge
+	git merge --abort (if there are errors)
+git remote
+	git remote add [name of remote; "origin" is a frequent name] [UR:]
+	git remote -v (verbose, tells you URL)
+	git remote set-url origin new_url   (so if you change name on github e.g.)
+git push [remote name] [local repo branch to push]
+git pull [remote name] [remote branch to pull]
+git fetch    (updates local repo w/ remote, but leaves your master alone)
+	git fetch [remote name, e.g. origin]  
+	git log origin/master   (shows what's on both remote and local repo)
+
+caching password for github: https://help.github.com/articles/caching-your-github-password-in-git/
+	git config --global credential.helper wincred
+
+output git log into nice format:
+git log --pretty=format:'%h : %s' --graph > log.log
+
+get colored git:
+git config --global color.ui auto
+
+Cloning a Repository
+To clone a repository, run git clone followed by a space and the repository URL.
+
+Asteroids URL
+Use the following url to clone the Asteroids repository: https://github.com/udacity/asteroids.git
+
+Exiting git log
+To stop viewing git log output, press q (which stands for quit).
+
+Getting Colored Output
+To get colored diff output, run git config --global color.ui auto
+
+Copying and Pasting from the Command Line
+To complete this quiz, you'll want to copy and paste some commit ids.
+
+Windows
+To copy and paste within Git Bash, follow the instructions on this page.
+
+Mac
+To copy and paste within the terminal on Mac, use Cmd+C and Cmd+V
+
+Ubuntu
+To copy and paste within the terminal on Ubuntu, use Ctrl+Shift+C and Ctrl+Shift+V.
+
+Using git log and git diff
+As a reminder, running git log will show a list of the recent commits with information about them, including commit IDs. Running git diff followed by two commit IDs will compare the two versions of the code in those commits. If you need a refresher, you may want to rewatch this video.
+
+Entering commit IDs
+If it is easier, you may enter the first four or more characters of the commit ID rather than pasting the entire ID.
